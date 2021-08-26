@@ -6,8 +6,12 @@
       height="75px"
     />
   </a>
-  <div id="buttons">
+  <div id="buttons" *ngIf="userID == null">
     <button id="login" class="buttons" routerLink="/login">Login</button>
     <button id="signup" class="buttons" routerLink="/register">Sign Up</button>
+  </div>
+  <div id="userbuttons" *ngIf="userID != null">
+    <button id="apply" class="buttons" routerLink="/loans">Apply</button>
+    <button id="account" class="buttons" routerLink="/applied">Account</button>
   </div>
 </div>

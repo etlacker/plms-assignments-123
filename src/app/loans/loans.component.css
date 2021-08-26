@@ -4,6 +4,7 @@
   align-items: center;
 }
 
-.fill-spc {
-  flex: 1 1 auto;
+::ng-deep .mat-card-header-text {
+  width: 100%;
+  text-align: center;
 }

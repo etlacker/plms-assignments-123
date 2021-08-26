@@ -1,0 +1,22 @@
+.loans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#approved {
+  justify-content: center;
+  background-color: rgb(5, 82, 34);
+  max-height: 36px !important;
+}
+
+#denied {
+  justify-content: center;
+  background-color: rgb(146, 31, 11);
+  max-height: 36px !important;
+}
+
+::ng-deep .mat-card-header-text {
+  width: 100%;
+  text-align: center;
+}

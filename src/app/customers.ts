@@ -15,7 +15,7 @@ export const CUSTOMERS: Customer[] = [
     name: 'Eric',
     email: 'eric@vanguard.com',
     password: '54321',
-    creditScore: 1,
+    creditScore: 670,
     appliedLoans: [LOANS[0], LOANS[1], LOANS[2]],
   },
 ];

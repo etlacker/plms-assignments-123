@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { LoginService } from '../login.service';
 
 @Component({
@@ -7,7 +7,10 @@ import { LoginService } from '../login.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  constructor(private loginService: LoginService) {}
+  constructor(
+    private loginService: LoginService,
+    private cdRef: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {}
 
@@ -22,5 +25,6 @@ export class LoginComponent implements OnInit {
     } else {
       console.log('fail');
     }
+    this.cdRef.detectChanges();
   }
 }

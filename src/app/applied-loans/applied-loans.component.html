@@ -1,1 +1,71 @@
-<p>applied-loans works!</p>
+<div fxLayout="column" class="loans-container">
+  <h2>Loans List</h2>
+  <ul style="list-style-type: none">
+    <li *ngFor="let loan of loans">
+      <mat-card
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        id="loan-card"
+        style="margin: 2em"
+      >
+        <mat-card-header>
+          {{ loan.bankName }}
+        </mat-card-header>
+        <mat-card-subtitle>Rating: {{ loan.rating }}</mat-card-subtitle>
+        <mat-card-content>
+          <div fxLayout="rows" fxLayoutAlign="center center">
+            <div>
+              <img
+                src="https://digital.hbs.edu/platform-rctom/wp-content/uploads/sites/4/2015/12/vanguard_logo_2178-600x200.jpg"
+                width="200px"
+                height="75px"
+              />
+            </div>
+            <div>
+              <mat-list>
+                <mat-list-item> Loan Amount: </mat-list-item>
+                <mat-list-item> Interest Rates: </mat-list-item>
+                <mat-list-item> Min Credit Score: </mat-list-item>
+                <mat-list-item> Term Length: </mat-list-item>
+                <mat-list-item> Processing Fee: </mat-list-item>
+              </mat-list>
+            </div>
+            <div>
+              <mat-list>
+                <mat-list-item>
+                  ${{ loan.minLoanAmount }} - ${{ loan.maxLoanAmount }}
+                </mat-list-item>
+                <mat-list-item>
+                  {{ loan.minInterestRate }}% - {{ loan.maxInterestRate }}%
+                </mat-list-item>
+                <mat-list-item> {{ loan.minCreditScore }} </mat-list-item>
+                <mat-list-item> {{ loan.termLength }} Months </mat-list-item>
+                <mat-list-item> ${{ loan.processingFee }} </mat-list-item>
+              </mat-list>
+            </div>
+          </div>
+          <div>
+            <mat-toolbar
+              id="approved"
+              *ngIf="
+                creditScore != undefined &&
+                creditScore != null &&
+                creditScore >= loan.minCreditScore
+              "
+              >APPROVED</mat-toolbar
+            >
+            <mat-toolbar
+              id="denied"
+              *ngIf="
+                creditScore != undefined &&
+                creditScore != null &&
+                creditScore < loan.minCreditScore
+              "
+              >DENIED</mat-toolbar
+            >
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </li>
+  </ul>
+</div>
