@@ -1,0 +1,15 @@
+#home {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#centercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+#banner-text {
+    align-items: center;
+    text-align: center;
+}
