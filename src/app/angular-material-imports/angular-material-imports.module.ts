@@ -10,6 +10,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [],
@@ -25,6 +28,9 @@ import { MatInputModule } from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatGridListModule,
+    FormsModule,
+    BrowserAnimationsModule,
   ],
 })
-export class AngularMaterialImportsModule { }
+export class AngularMaterialImportsModule {}

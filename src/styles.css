@@ -1,9 +1,16 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 html {
-    height: 100%;
+  height: 100%;
 }
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #182038;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* background-color: #182038; */
+  /* color: rgb(231, 231, 231); */
+}
+
+/* make mat-card headers the width of the card */
+.mat-card-header-text {
+  width: 100% !important;
 }

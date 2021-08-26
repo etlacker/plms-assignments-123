@@ -8,8 +8,39 @@
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
+    border: solid rgb(145,0,0) 4px;
+    border-radius: 12px;
+    padding: 25px;
 }
 #banner-text {
     align-items: center;
     text-align: center;
+}
+#center-box {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    padding:15px;
+}
+
+#check-rate {
+    /* align-self: flex-end; */
+    border-left: 2px;
+    border-color: rgb(37, 37, 37);
+}
+
+.divider {
+    color: black;
+    height: 80%;
+    width: 0px !important;
+    /* position: inherit !important; */
+
+}
+a {
+    background-color: rgb(145,0,0);
+    color:white;
 }

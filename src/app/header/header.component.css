@@ -1,11 +1,12 @@
 #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(145, 0, 0);
 }
 .buttons {
-    padding: 20px;
-    border-radius: 12px;
-    margin-left: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  margin-left: 10px;
 }

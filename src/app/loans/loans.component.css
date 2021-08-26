@@ -1,0 +1,9 @@
+.loans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill-spc {
+  flex: 1 1 auto;
+}
